@@ -1,0 +1,70 @@
+<resources>
+
+    //НАЗВАНИЯ ДЛЯ КНОПОК
+    <string name="app_name">Pocket Atlas</string>
+    <string name="start">Начать</string>
+    <string name="search">Поиск созвездия...</string>
+    <string name="ph">placeholder</string>
+    <string name="all">Все</string>
+    <string name="sort">Сортировка</string>
+    <string name="filter">Фильтр</string>
+    <string name="nameAESC">Алфавитный порядок (А - Я)</string>
+    <string name="nameDESC">Обратный порядок (Я - А)</string>
+    <string name="idAESC">Площадь по убыванию</string>
+    <string name="idDESC">Площадь по возрастанию</string>
+    <string name="per">Персей</string>
+    <string name="urs">Большая Медведица</string>
+    <string name="her">Геркулес</string>
+    <string name="zod">Зодиакальная</string>
+    <string name="ori">Орион</string>
+    <string name="wat">"Небесные воды"</string>
+    <string name="bay">Байера</string>
+    <string name="lac">Николы Луи де Лакайль</string>
+    <string name="aboutFamilyGroup">Группы-семейства созвездий(?):</string>
+
+    //ПЕРЕМЕННЫЕ ДЛЯ КОДА
+    <string name="const_name"></string>
+
+
+    //ИНФ В ТАБЛИЦУ
+    <string name="Row1">Основная информация, положение и наблюдение</string>
+    <string name="Row3">Звёзды в созвездии</string>
+
+    <string name="code">Сокращение</string>
+    <string name="r_asc">Прямое восхождение</string>
+    <string name="declension">Склонение</string>
+    <string name="area">Площадь</string>
+    <string name="latitude">Видимость в широтах</string>
+    <string name="stars">Ярчайшие звёзды</string>
+    <string name="meteorshowers">Метеорные потоки</string>
+    <string name="neighbour">Соседние созвездия</string>
+    <string name="majorStars">Главные звезды</string>
+    <string name="history">История</string>
+
+
+    //ПЕРЕМЕННЫЕ ДЛЯ ИНФ В ТАБЛИЦУ
+    <string name="codeValue"></string>
+    <string name="r_ascValue"></string>
+    <string name="declensionValue"></string>
+    <string name="areaValue"></string>
+    <string name="latitudeValue"></string>
+    <string name="starsValue"></string>
+    <string name="meteorshowersValue"></string>
+    <string name="neighbourValue"></string>
+
+    <string name="col1">Oбъeкт</string>
+    <string name="col2">Oбoзнaчeниe</string>
+    <string name="col3">Знaчeниe имeни</string>
+    <string name="col4">Tип oбъeктa</string>
+    <string name="col5">Звeзднaя вeличинa (m)</string>
+
+    <string name="majorStarsValue"></string>
+    <string name="historyValue"></string>
+
+    //ПЕРЕМЕННЫЕ ДЛЯ ИНФ В ДИАЛОГ
+    <string name="Qr_asc">Что такое прямое восхождение?</string>
+    <string name="Qdeclension">Что такое склонение созвездия?</string>
+    <string name="Qstars">Ярчайшие звёзды, критерии</string>
+    <string name="Qmeteorshowers">Подробнее о метеоритных потоках</string>
+
+</resources>

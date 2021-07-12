@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+
+    <TextView
+        android:id="@+id/data1"
+        android:layout_width="63dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Object ID"
+        android:fontFamily="@font/tex_bold"
+        android:textColor="@color/black95"
+        android:textSize="12dp"/>
+    <TextView
+        android:id="@+id/data2"
+        android:layout_width="93dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:layout_marginLeft="63dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Object Name"
+        android:fontFamily="@font/tex_bold"
+        android:textColor="@color/black95"
+        android:textSize="12dp"/>
+    <TextView
+        android:id="@+id/data3"
+        android:layout_width="69dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:layout_marginLeft="156dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Alt Name"
+        android:fontFamily="@font/tex_bold"
+        android:textColor="@color/black95"
+        android:textSize="12dp"/>
+    <TextView
+        android:id="@+id/data4"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:layout_marginLeft="225dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Object Type"
+        android:fontFamily="@font/tex_bold"
+        android:textColor="@color/black95"
+        android:textSize="11dp"/>
+    <TextView
+        android:id="@+id/data5"
+        android:layout_width="72dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:layout_marginLeft="315dp"
+        android:gravity="center"
+        android:paddingRight="20dp"
+        android:text="Magnitude(m)"
+        android:fontFamily="@font/tex_bold"
+        android:textColor="@color/black95"
+        android:textSize="12dp"/>
+
+</RelativeLayout>

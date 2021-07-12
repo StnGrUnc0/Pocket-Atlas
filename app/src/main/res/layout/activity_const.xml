@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+        
+        <Button
+            android:id="@+id/sortButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@null"
+            android:text="@string/sort"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/tex_bold"
+            android:onClick="showSortTapped" />
+
+        <ImageView
+            android:background="@drawable/logo_white"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="10dp">
+        </ImageView>
+
+        <Button
+            android:id="@+id/filterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@null"
+            android:layout_marginEnd="20dp"
+            android:text="@string/filter"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/tex_bold"
+            android:onClick="showFilterTapped"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <SearchView
+        android:id="@+id/groupListSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="@string/search"
+        android:background="@color/black95"
+        android:backgroundTint="@color/white"
+        tools:targetApi="lollipop" />
+
+    <LinearLayout
+        android:id="@+id/filterTabsLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <Button
+            android:id="@+id/allFilter"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/all"
+            android:fontFamily="@font/tex_bold"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"
+            android:onClick="allFilterTapped"
+            android:textSize="12dp"
+            android:padding="10dp"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/perFilter"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/per"
+            android:fontFamily="@font/tex_bold"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"
+            android:onClick="perFilterTapped"
+            android:textSize="12dp"
+            android:padding="10dp"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/herFilter"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/her"
+            android:fontFamily="@font/tex_bold"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"
+            android:onClick="herFilterTapped"
+            android:textSize="12dp"
+            android:padding="10dp"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/oriFilter"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/ori"
+            android:fontFamily="@font/tex_bold"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"
+            android:onClick="oriFilterTapped"
+            android:textSize="12dp"
+            android:padding="10dp"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filterTabsLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <Button
+            android:id="@+id/lacFilter"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/lac"
+            android:fontFamily="@font/tex_bold"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"
+            android:onClick="lacFilterTapped"
+            android:textSize="12dp"
+            android:padding="10dp"
+            style="?android:attr/buttonBarButtonStyle">
+        </Button>
+
+        <Button
+            android:id="@+id/zodFilter"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/zod"
+            android:fontFamily="@font/tex_bold"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"
+            android:onClick="zodFilterTapped"
+            android:textSize="12dp"
+            android:padding="10dp"
+            style="?android:attr/buttonBarButtonStyle">
+        </Button>
+        <Button
+            android:id="@+id/bayFilter"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/bay"
+            android:fontFamily="@font/tex_bold"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"
+            android:onClick="bayFilterTapped"
+            android:textSize="12dp"
+            android:padding="10dp"
+            style="?android:attr/buttonBarButtonStyle">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filterTabsLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <Button
+            android:id="@+id/ursFilter"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/urs"
+            android:fontFamily="@font/tex_bold"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"
+            android:onClick="ursFilterTapped"
+            android:textSize="12dp"
+            android:padding="10dp"
+            style="?android:attr/buttonBarButtonStyle">
+        </Button>
+        <Button
+            android:id="@+id/watFilter"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/wat"
+            android:fontFamily="@font/tex_bold"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"
+            android:onClick="watFilterTapped"
+            android:textSize="12dp"
+            android:padding="10dp"
+            style="?android:attr/buttonBarButtonStyle">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aboutLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+        <Button
+            android:id="@+id/aboutButton"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/aboutFamilyGroup"
+            android:textAllCaps="false"
+            android:textColor="@color/teal_700"
+            android:fontFamily="@font/tex_bolditalic"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sortTabsLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/idAESC"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/idAESC"
+            android:fontFamily="@font/tex_bold"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"
+            android:onClick="idAESCTapped"
+            android:textSize="12dp"
+            android:padding="10dp"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/idDESC"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:text="@string/idDESC"
+            android:fontFamily="@font/tex_bold"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"
+            android:onClick="idDESCTapped"
+            android:textSize="12dp"
+            android:padding="10dp"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sortTabsLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/nameAESC"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/nameAESC"
+            android:fontFamily="@font/tex_bold"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"
+            android:onClick="nameAESCTapped"
+            android:textSize="12dp"
+            android:padding="10dp"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/nameDESC"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:text="@string/nameDESC"
+            android:fontFamily="@font/tex_bold"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"
+            android:onClick="nameDESCTapped"
+            android:textSize="12dp"
+            android:padding="10dp"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/groupsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
